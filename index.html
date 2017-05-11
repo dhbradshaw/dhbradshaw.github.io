@@ -25,9 +25,9 @@
       justify-content: space-around;
       align-items: space-around;
       align-content: space-around;
-      height: 100%;
+      /*height: 100%;*/
       max-width: 1000px;
-      min-width: 500px;
+      min-width: 300px;
       margin-top: 0%;
       margin-bottom: 0%;
       margin-left: auto;
@@ -47,6 +47,7 @@
       flex: 1;
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       justify-content: space-around;
       padding: 50px;
     }
@@ -68,27 +69,34 @@
   </style>
 </head>
 <body>
+  <img src='assets/dougbradshaw.jpg' style='border-radius: 50%; height:80px;width:80px;'/>
   <h1>Douglas H. Bradshaw, <small>Mathematical coder</small></h1>
   <div>
     <h2>Physics</h2>
     <p>
-      Before deciding to code full time, I spent my time in biophysics, laser physics, and then
+      Before coding full time, I spent my time in biophysics, laser physics, and then
       laser CVD.  By the end of my time as a physicist, I found myself
-      finding excuses to code.  For example, I used OpenCV to perform real-time
-      video analysis in order to guide a substrate as I used a laser to grow material
-      on top of it.
+      finding excuses to code.
+    </p>
+    <p>
+      For example, I used OpenCV to perform real-time
+      video analysis.  Estimates from OpenCV were then wired in to substrate control
+      which enabled my system to automatically grow very long carbon fibers using
+      laser CVD.
     </p>
   </div>
-  <h2>Contracting</h2>
+  <h2>Web</h2>
   <div>
     <p>
-      After the transition to full time coding, I helped stand up two successful products
-      (<a href='https://titanecho.com/'>Titan Echo</a> and
-      <a href='https://blipbillboards.com'>Blip Billboards</a>).
+      After the transition to full time coding, I helped stand up two successful products,
+      <a href='https://titanecho.com/'>Titan Echo</a>, a tool that helps professional
+      accountants perform cost segregation on commercial buildings, and
+      <a href='https://blipbillboards.com'>Blip Billboards</a>, a system that
+      democratizes the display of electronic billboard adds.
     </p>
   </div>
   <div>
-    <h2>Life work</h2>
+    <h2>Brighthike</h2>
     <p>
       When we had our home paid off and a few
       years of savings, I stepped back to focus my efforts on
@@ -100,8 +108,9 @@
   <div>
     <h2>Stack</h2>
     <p>
-      All my projects have used python/django on the back end.  My front end of choice
-      is react/react native.
+      All my recent projects have used python/django on the back end.  My front
+      end of choice is react/react native.  Persistance is managed through
+      postgres.
     </p>
   </div>
   <div id='flairs'>
